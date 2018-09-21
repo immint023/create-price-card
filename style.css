@@ -1,0 +1,101 @@
+body {
+  background-color: #AAA;
+  font-family: "Roboto", sans-serif;
+  color: #313131;
+  padding: 1rem 2rem;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+  padding: 1rem 4rem;
+}
+
+.card-1 {
+  background-color: dodgerblue;
+  grid-column: span 4;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0.4px 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 300;
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  position: relative;
+  overflow: hidden;
+}
+.card-2 {
+  background-color: dodgerblue;
+  grid-column: span 4;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0.4px 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 300;
+  background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+  position: relative;
+  overflow: hidden;
+}
+.card-3 {
+  background-color: dodgerblue;
+  grid-column: span 4;
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0.4px 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-weight: 300;
+  background-image: linear-gradient(to top, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+  position: relative;
+  overflow: hidden;
+}
+.card-1:before, .card-2:before , .card-3:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: skewY(-8deg) scale(1.2);
+}
+.details ul {
+   padding: 0; 
+   list-style: none;
+   line-height: 2rem;
+   position: relative;
+   z-index: 10;
+}
+.far {
+  font-size: 34px;
+  border: 1px dashed grey;
+  border-radius: 50%;
+  padding: 1rem;
+}
+.title h3 {
+  font-weight: 350;
+  font-size: 20pt;
+}
+.price h2 {
+  font-weight: 400;
+  font-size: 24pt;
+}
+.price sub {
+  font-size: 32pt;
+}
+a {
+  display: inline-block;
+  background-color: white;
+  color: #313131;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  box-shadow: 0.4px 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+
